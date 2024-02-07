@@ -33,6 +33,11 @@ export const Navbar=()=> {
                   <button className="btn1">Login</button>
                 </a>
               </li>
+              <li className="link">
+                <a href="/instant-consultation">
+                  <button className="btn1">Book Consultation</button>
+                </a>
+              </li>
 
         </ul>
       </nav>

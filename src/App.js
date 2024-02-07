@@ -5,6 +5,7 @@ import { Navbar } from './Components/navbar/Navbar';
 import { LandingPage } from './Components/Landing_Page/Landing_Page';
 import {Sign_Up} from './Components/Sign_up/Signup';
 import {Login} from './Components/login/Login'
+import {InstantConsultation} from './Components/InstantConsultationBooking/InstantConsultation'
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,8 @@ function App() {
             <Route path='/' Component={LandingPage}/>
             <Route path='/signup' Component={Sign_Up}/>
             <Route path='/login' Component={Login}/>
+            <Route path='/instant-consultation' Component={InstantConsultation}/>
+
         </Routes>
         </BrowserRouter>
     </div>
