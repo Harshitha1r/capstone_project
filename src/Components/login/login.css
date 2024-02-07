@@ -24,6 +24,14 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  .form-control1 {
+    width: 40%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
   
   .btn-group {
     margin-top: .0001px;

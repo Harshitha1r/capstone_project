@@ -6,18 +6,17 @@ import { LandingPage } from './Components/Landing_Page/Landing_Page';
 import {Sign_Up} from './Components/Sign_up/Signup';
 import {Login} from './Components/login/Login'
 import {InstantConsultation} from './Components/InstantConsultationBooking/InstantConsultation'
-import {Notification} from './Components/Notification/Notification'
+import {GiveReviews} from './Components/Reviews/Reviews'
 function App() {
   return (
     <div className="App">
         <BrowserRouter>
-        <Navbar/>
         <Routes>
             <Route path='/' Component={LandingPage}/>
             <Route path='/signup' Component={Sign_Up}/>
             <Route path='/login' Component={Login}/>
             <Route path='/instant-consultation' Component={InstantConsultation}/>
-            <Route path='/Notification' Component={Notification}/>
+            <Route path='/Notification' Component={GiveReviews}/>
         </Routes>
         </BrowserRouter>
     </div>
