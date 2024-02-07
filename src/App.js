@@ -6,6 +6,7 @@ import { LandingPage } from './Components/Landing_Page/Landing_Page';
 import {Sign_Up} from './Components/Sign_up/Signup';
 import {Login} from './Components/login/Login'
 import {InstantConsultation} from './Components/InstantConsultationBooking/InstantConsultation'
+import {Notification} from './Components/Notification/Notification'
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
             <Route path='/signup' Component={Sign_Up}/>
             <Route path='/login' Component={Login}/>
             <Route path='/instant-consultation' Component={InstantConsultation}/>
-
+            <Route path='/Notification' Component={Notification}/>
         </Routes>
         </BrowserRouter>
     </div>
