@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../login/login.css'
+import { Rating } from '@mui/material';
+import StarRateIcon from '@mui/icons-material/StarRate';
 export function GiveReviews() {
   const [showForm, setShowForm] = useState(false);
   const [submittedMessage, setSubmittedMessage] = useState('');
@@ -42,7 +44,18 @@ export function GiveReviews() {
                  <label htmlFor="review">Review:</label>
                   <textarea id="review" name="review" value={formData.review} className="form-control" onChange={handleChange} />
                  </div>
-                 <button type="submit" className="form-control" disabled>Submit</button>
+                 <div>
+                 <label htmlFor="review">Rating:</label>
+                 <Rating
+                    name="text-feedback"
+                     value={5}
+                     readOnly
+                     precision={0.5}
+                     emptyIcon={<StarRateIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+                />
+                </div>
+                <button type="button" className="form-control" disabled={true}>Submit</button>
+
                </form>
       
       {submittedMessage && (

@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
         <BrowserRouter>
+        <Navbar/>
         <Routes>
             <Route path='/' Component={LandingPage}/>
             <Route path='/signup' Component={Sign_Up}/>
