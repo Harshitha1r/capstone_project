@@ -7,7 +7,8 @@ import {Sign_Up} from './Components/Sign_up/Signup';
 import {Login} from './Components/login/Login'
 import {InstantConsultation} from './Components/InstantConsultationBooking/InstantConsultation'
 import {GiveReviews} from './Components/Reviews/Reviews'
-function App() {
+import {ProfileForm} from './Components/ProfieCard/Profilecard'
+function App() pp{
   return (
     <div className="App">
         <BrowserRouter>
@@ -17,7 +18,7 @@ function App() {
             <Route path='/signup' Component={Sign_Up}/>
             <Route path='/login' Component={Login}/>
             <Route path='/instant-consultation' Component={InstantConsultation}/>
-            <Route path='/Notification' Component={GiveReviews}/>
+            <Route path='/Notification' Component={ProfileForm}/>
         </Routes>
         </BrowserRouter>
     </div>
